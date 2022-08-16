@@ -1,0 +1,146 @@
+h2 {
+	color: #133183;
+	text-align: left;
+}
+
+h1 {
+	text-decoration: black underline wavy;
+	letter-spacing: 15px;
+}
+
+p {
+	color: black;
+	text-align: justify;
+	background-color: rgb(192, 192, 192);
+	font-weight: 900; /* for boldness*/
+	line-height: 2;
+	opacity: 0.8;
+}
+
+button {
+	background-color: teal;
+	color: yellow;
+}
+
+body {
+	background-color: #7bf3e9;
+}
+
+h3 {
+	color: brown;
+	font-size: 70px;
+}
+
+h4,
+h5 {
+	font-size: 30px;
+}
+
+li a {
+	color: #ecf515; /*li kay andar jitnay anchor tag hongay un par css apply hogi*/
+}
+
+h4 + button {
+	background-color: chartreuse; /*h4 kay baad jitnay button hogay unpar css apply hogi*/
+}
+
+ul > a {
+	background-color: rosybrown; /*ul kay bilkul opaar a tag par css apply hogi*/
+}
+
+input[type="password"] {
+	background-color: darkcyan; /*input type password ka jo jo hoga pooray doc mai uspar css apply hogi*/
+}
+
+::placeholder {
+	color: black;
+}
+
+button:hover {
+	background-color: red;
+	color: whitesmoke;
+}
+
+button:active {
+	background-color: green;
+	color: rosybrown;
+}
+
+ul:nth-of-type(2n) {
+	/* : used for psuedo classes and :: used for psuedo elements*/
+	background-color: salmon;
+}
+
+p::first-line {
+	color: orange;
+}
+
+::selection {
+	font-size: 60px; /*jis jis ko select karain gay uska font size 60 px hojayga*/
+}
+
+div {
+	width: 50%;
+}
+
+img {
+	width: 50%;
+	border-color: black;
+	border-width: 5px;
+	border-style: inset;
+	box-sizing: border-box; /*isay total 50% dikhayga warna border width add karkay 55% hogaya tha*/
+	margin-bottom: 10px;
+	transition: 5s;
+}
+
+img:hover {
+	margin-left: 200px;
+}
+
+#cs {
+	border: 4px solid black; /*width border-style border color all in 1*/
+	width: 10%;
+	border-radius: 10px 100px / 120px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#try {
+	border: 4px solid black;
+	padding: 5px 3px 5px 3px;
+}
+
+h5 {
+	background-color: #133183;
+	display: inline; /*by using inline ab poori line nhi balkay jitni space hai utni layga*/
+	/*width and height are not applied on inline elements*/
+}
+
+.pad {
+	height: 200px;
+	width: 200px;
+	background-color: gold;
+	border: 5px solid black;
+	display: inline; /*sirf display inline karnay say kharab horaha kyo kay height and width nhi applicable hai inline par*/
+}
+/* span is inline and div is block element*/
+.bat {
+	height: 200px;
+	width: 200px;
+	background-color: gold;
+	border: 5px solid black;
+	display: inline-block; /*ab display inline block karain gay to hojayga kyo kay inline mai block kar raha*/
+}
+
+.circle {
+	height: 200px;
+	width: 200px;
+	border: 3px blue;
+	background-color: magenta;
+	transition: background-color 2s, border-radius 1s;
+}
+
+.circle:hover {
+	background-color: rgb(94, 212, 16);
+	border-radius: 50%;
+}

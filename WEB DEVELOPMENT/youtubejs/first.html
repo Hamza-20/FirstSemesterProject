@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <script src="functionjs.js">
+    </script>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <h1>JAVA SCRIPT</h1>
+    <p align="center">
+
+        <img src="iniesta.jpg" alt="iniesta" id="i1" width="50%" height="200px"><br>
+        <button onclick="picturechange('iniesta.jpg')">PICTURE 1</button>
+        <button onclick="picturechange('xavi.jpg')">PICTURE 2</button>
+    </p>
+
+    <p>
+    <p id="demo"> Content </p>
+    <button type="button" onclick="document.getElementById('demo').style.
+display='none'">Click Me!</button>
+    </p>
+
+    <p id="i2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat, voluptas optio minima corporis
+        inventore
+        labore, esse sed cupiditate nesciunt doloremque dolore quas est itaque praesentium, amet assumenda. Reiciendis,
+        dicta!
+        Reprehenderit totam nemo consequatur tenetur incidunt a numquam debitis eaque temporibus doloribus, corporis
+        aliquam. Ea rerum, porro doloribus officia molestias voluptate aperiam architecto dolorum inventore quo eos
+        similique, in officiis.
+        Ipsam, eos incidunt magni hic earum voluptates eum ipsa sunt, distinctio magnam doloribus quod fugit omnis
+        adipisci nisi amet culpa unde soluta quia maxime accusamus laboriosam. Sequi nihil quod error.</p>
+    <br>
+    <button onclick="colorchange('Rosybrown')">Rosybrown</button>
+    <button onclick="colorchange('Teal')">Teal</button>
+
+    <div class="column">
+        <p>
+            <img src="iniesta.jpg" alt="iniesta" class="sub">
+            <img src="iniesta.jpg" alt="iniesta" class="sub">
+            <img src="iniesta.jpg" alt="iniesta" class="sub">
+            <img src="xavi.jpg" alt="xavi" class="sub">
+            <img src="xavi.jpg" alt="xavi" class="sub">
+            <img src="xavi.jpg" alt="xavi" class="sub">
+        </p>
+    </div>
+
+
+    <script>
+        function colorchange(x) {
+            document.getElementById('i2').style.background = x
+        }
+
+        function picturechange(y) {
+            document.getElementById('i1').src = y
+        }
+    </script>
+</body>
+
+</html>

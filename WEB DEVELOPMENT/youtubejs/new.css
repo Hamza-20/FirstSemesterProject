@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+.sub {
+	float: left;
+	width: 33%;
+	padding: 5px;
+}
+
+.column::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column img {
+	height: 200px;
+}
+
+/*above code is to align pictures in a sinlge row*/

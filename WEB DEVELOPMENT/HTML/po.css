@@ -1,0 +1,19 @@
+div {
+	height: 90px;
+	width: 10%;
+	background-color: gold;
+	border: 5px solid black;
+	display: inline-block;
+}
+
+#middle {
+	position: relative;
+	top: 100px;
+}
+
+img {
+	position: fixed;
+	left: 70%;
+	width: 30%;
+	height: 200px;
+}

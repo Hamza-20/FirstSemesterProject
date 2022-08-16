@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 2</title>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis dignissimos molestiae odio at atque
+        dolor animi odit alias? Natus ipsa facilis nihil consectetur maiores iusto veniam placeat deserunt voluptatibus!
+
+        <a href="first.html">click here!</a>
+    </p>
+
+    <!-- shortcuts of emmet-->
+    nav>ul>li*5>a[href="$"]{click me}
+
+    <h1>TABLE PRACTICE</h1>
+
+    <table>
+        <thead>
+            <tr>
+
+                <th rowspan="2">Name</th>
+                <th colspan="2">Roll number</th>
+                <th rowspan="2">Section</th>
+            </tr>
+
+            <tr>
+                <th>Dept</th>
+                <th>ID NO</th>
+
+            </tr>
+        </thead>
+
+        <tr>
+            <td>Hamza</td>
+            <td>CS</td>
+            <td>201083</td>
+            <td>B2</td>
+        </tr>
+
+        <tr>
+            <td>Saad</td>
+            <td>CS</td>
+            <td>201082</td>
+            <td>1B2</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td>Present</td>
+                <td>Present</td>
+                <td>Present</td>
+                <td>Present</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- yaha form kay bahar hai to default mai type submit nhi hui wi agar attribute type="" kuch likho to apni marzi ki type 
+    likh saktay -->
+    <button>CLICK HERE!!</button>
+
+    <h3>FORMS</h3>
+    <form action="/store">
+        <label for="week">Select a week?</label>
+        <input id="week" type="week" placeholder="select week" name="week"><br><br>
+
+        <label for="pass">Enter password:</label>
+        <input id="pass" type="password" placeholder="Input password" name="pass"><br><br>
+
+        <label for="txt">Enter text:</label>
+        <input id="txt" type="text" placeholder="Input text" name="txt"><br><br>
+
+        <label for="num">Enter number:</label>
+        <input id="num" type="number" placeholder="Input number" name="n" min="50" max="150" step="5"><br><br>
+
+        <label for="date">Enter date:</label>
+        <input id="date" type="date" placeholder="Select date" num="date"><br><br>
+
+        <label for="color">Select a color:</label>
+        <input id="color" type="color" placeholder="select color" num="col"><br><br>
+
+        <button>SUBMIT</button>
+        <!--Jab form kay andar ata hai button to default say he type submit hoti-->
+
+    </form>
+    <h2>T2</h2>
+
+    <table>
+        <tr>
+            <thead>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th>Section</th>
+        </tr>
+        </thead>
+
+        <tr>
+            <td>Hamza</td>
+            <td>CS201083</td>
+            <td>B2</td>
+        </tr>
+
+        <tr>
+            <td>Saad</td>
+            <td>CS201091</td>
+            <td>1B2</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td>Present</td>
+                <td>Present</td>
+                <td>Present</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br><br><br>
+
+    <h3>HIJACKING SEARCHES</h3>
+
+    <h4>GOOGLE</h4>
+    <form action="https://www.google.com/search">
+        <label for="text">Enter any text to search</label>
+        <input type="text" placeholder="text" name="q">
+        <button>SERACH GOOGLE</button>
+
+    </form>
+
+    <h3>YOUTUBE</h3>
+    <form action="https://www.youtube.com/search">
+        <label for="text">Enter any text to search</label>
+        <input type="text" placeholder="text" name="search_query">
+        <button>SERACH YOUTUBE</button>
+
+    </form>
+
+    <form action="/nice">
+        <h2>More inputs</h2>
+
+        <input type="checkbox" name="bba" checked>
+        <label for="text">BBA</label>
+        <br>
+        <input type="checkbox" name="mba">
+        <label for="text">MBA</label>
+        <p>
+            <label for="text">Male</label>
+            <input type="radio" name="gender" value="ma"><br>
+
+            <label for="text">Female</label>
+            <input type="radio" name="gender" value="f"><br><br>
+        </p>
+
+        <!--name in radio box should be same to interlink all radio boxes -->
+
+        <button type="submit">OK</button>
+    </form>
+
+
+    <h3>SELECT OPTION</h3>
+
+    <form action="/go">
+        <select name="/football">
+            <option value="">PLEASE SELECT AN OPTION</option>
+            <option value="mid">Midfielder</option>
+            <option value="winger">Winger</option>
+            <option value="attc">Attacker</option>
+            <option value="CB">Center-Back</option>
+        </select>
+        <br><br>
+        <button>DONE</button>
+
+        <br><br>
+        <label for="cheese">Select cheese quantity</label>
+        <input type="range" name="quantity" min="1" max="10" value="3">
+
+        <br><br>
+        <label for="text">Enter the text you want:</label>
+        <textarea name="req" id="" cols="30" rows="10" placeholder="type something..."></textarea>
+    </form>
+
+    <h2>HTML FORM VALIDATIONS</h2>
+
+    <form action="/fake">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="n" required><br>
+        <label for="pass">Enter password</label>
+        <input type="password" name="pass" id="p" minlength="5" maxlength="10" required><br>
+        <label for="link">Enter URL:</label>
+        <input type="url" name="link" pattern="https://." required>
+        <button>Submit</button>
+    </form>
+    <!--pattern is used to describe the criteria for the field -->
+
+    <h2>Race Registration!</h2>
+
+    <form action="/marathon">
+        <label for="fn">First name</label>
+        <input type="text" name="fname" id="fn" required>
+
+        <label for="ln">Last name</label>
+        <input type="text" name="lname" id="ln" required><br><br>
+
+        <label for="race">Select a race:</label><br><br>
+
+
+        <input type="radio" name="race" value="fr" id="fr">
+        <label for="fr">Fun Run 5k</label><br>
+
+        <!--id and for ko saem rakhnay par label say click karo to bhi select hojata-->
+
+        <input type="radio" name="race" value="hm" id="hrs">
+        <label for="hrs">Half Marathon</label><br>
+
+        <!--name jismai value save hoti and value jo name mai save hoti-->
+
+        <input type="radio" name="race" value="fm" id="frs">
+        <label for="frs">Full Marathon</label><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="em" id="email" required>
+
+        <label for="pass">Password</label>
+        <input type="password" name="p" minlength="4" maxlength="8" id="pass" required><br>
+
+        <label for="ag">Select age group</label>
+        <select name="/age" id="ag">
+            <option value="t18">under 18</option>
+            <option value="twentys">20-22</option>
+            <option value="t2">22-25</option>
+            <option value="t5">25-28</option>
+            <option value="t8">28+</option>
+        </select><br>
+
+        <button>Register</button>
+    </form>
+
+</body>
+
+</html>
